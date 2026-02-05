@@ -1,0 +1,108 @@
+:root {
+  --bg: #f6fbff;
+  --panel: #ffffff;
+  --muted: #6b7280;
+  --text: #0f172a;
+  --border: #e6eef7;
+
+  --primary: #0ea5a4; /* teal */
+  --primary-2: #2563eb; /* blue */
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 10% 0%, #e9fbff 0%, transparent 60%),
+    radial-gradient(1200px 600px at 90% 0%, #eef2ff 0%, transparent 60%),
+    var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+}
+
+.container {
+  padding: 18px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  outline: none;
+  background: #fff;
+}
+.input:focus {
+  border-color: rgba(14, 165, 164, 0.55);
+  box-shadow: 0 0 0 4px rgba(14, 165, 164, 0.12);
+}
+
+.h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+.h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 14px;
+}
+.table th {
+  color: #334155;
+  font-weight: 700;
+  background: linear-gradient(#fbfdff, #f7fbff);
+}
